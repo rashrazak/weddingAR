@@ -1,0 +1,31 @@
+<ion-view view-title="Update Information" hide-back-button="false">
+
+<ion-content class="padding-top">
+          
+           <ion-item ng-model= "emailx" >
+     
+       Email: {{emailx}}
+    </ion-item>
+     
+    <form name="submitInfox" ng-submit="submitInfo()">
+    <ion-item >
+        <input type="text" name="fullname" ng-model="fullnamex" placeholder="Your fullname">
+        {{fullnamex}} </ion-item >
+        <ion-item ><input type="text" name="icpp" ng-model="icppx" placeholder="Your Ic">
+        {{icppx}}</ion-item >
+        <ion-item ><input type="text" name="city" ng-model="cityx" placeholder="Your city">
+        {{cityx}}</ion-item >
+        <ion-item ><input type="text" name="phoneno" ng-model="phonenox" placeholder="Your Phone No">
+         {{phonenox}}</ion-item >
+    <input type="submit" class="button button-block button-positive" value="Proceed">
+    
+
+    <ion-item>
+        Add picture (soon)
+    </ion-item>
+    <ion-item>
+          
+    </ion-item>
+    </form>
+        </ion-content>
+</ion-view>

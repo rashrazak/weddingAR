@@ -1,0 +1,7 @@
+{
+  "name": "weddingAR",
+  "app_id": "",
+   "serve" :  {
+       "defaultBrowser" :  "chrome"
+   }
+}

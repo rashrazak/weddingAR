@@ -1,0 +1,21 @@
+<ion-view view-title="Users" >
+<div class="bar bar-header bar-dark" hide-back-button="true">
+  <h1 class="title">bar-dark</h1>
+</div>
+  <ion-content>
+    <ion-list can-swipe="true">
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="(key, item) in chats" type="item-text-wrap" href="#/user/chats/{{chat.email}}">
+        <img ng-src="{{item.gravatar}}">
+        <h2>{{item.fullname}}</h2>
+        <p>{{item.phone}} @ {{item.city}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+      
+        <ion-option-button class="button-assertive " ng-click="remove(key)" >Delete</ion-option-button>
+
+     <!--    <ion-option-button  ng-click="update(CHat)" side="left"></ion-option-button> -->
+       
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

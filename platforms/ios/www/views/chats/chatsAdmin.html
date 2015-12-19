@@ -1,0 +1,23 @@
+<ion-view >
+  <ion-header-bar class="bar-dark">
+    <div class="title">Chatting as {{nickname}}</div>
+  </ion-header-bar>
+  <div class="bar bar-subheader">
+    <p class="title">{{status_message}}</p>
+  </div>
+  <ion-content class="has-subheader">
+      <ion-list class="list">
+      <li  ng-repeat="msg in hantarla" class="item item-avatar-left">
+        <img src="https://cdn3.iconfinder.com/data/icons/rcons-user-action/32/boy-64.png">
+        {{msg.sender}}:   {{msg.message}}
+      </li></ion-list>
+  </ion-content>
+
+  <div class="bar bar-footer item-input-inset footer-item-input-inset">
+    <label class="item-input-wrapper">
+      <i class="icon ion-android-chat placeholder-icon"></i> 
+      <input type="text" placeholder="enter message" ng-model="message" />
+    </label>
+    <button class="button button-dark button-clear ion-android-send icon" ng-click="sendMessage()"></button>
+  </div>
+</ion-view>
